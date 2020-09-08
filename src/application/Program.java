@@ -36,13 +36,15 @@ public class Program {
 		
 		System.out.println("quantos items voce vai pedir ");
 		int n = sc.nextInt();
-		for (int i =0; n < i; i++) {
+		for (int i =0; i < n; i++) {
 			System.out.println("nome do produto");
 			String nomeProduto = sc.nextLine();
+			sc.nextLine();
 			System.out.println("Qual o preço do produto ? ");
 			double priceProduto = sc.nextDouble();
 			
 			Product product = new Product (nomeProduto,priceProduto);
+			System.out.println("Quantidade");
 			
 			int quantidadeProduto = sc.nextInt();
 			
